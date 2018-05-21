@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback5"
+    tools:context="com.afiq.ezsmartpark1.RecognizeTextActivity">
+
+    <com.afiq.ezsmartpark1.view.TouchImageView
+        android:id="@+id/grid_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="55dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <EditText
+            android:id="@+id/check_plate_fill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Name" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStartCamera"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dip"
+        android:background="#fff"
+        android:text="@string/text_btn_camera"
+        android:textColor="#ff6347" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="1dip"
+        android:layout_marginTop="2dip"
+        android:layout_toLeftOf="@id/btnStartCamera"
+        android:background="#fff"
+        android:text="@string/text_btn_exit"
+        android:textColor="#ff6347" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1dip"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@id/btnStartCamera"
+        android:background="#fff"
+        android:enabled="false"
+        android:textColor="#ff6347" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnStartCamera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-2dip"
+        android:text="@string/text_btn_check"
+        android:onClick="Check" />
+
+</RelativeLayout>

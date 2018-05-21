@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback4"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/usermenu1"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/pleasetextview"
+        android:background="@color/purple"
+        android:text="User Menu"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/parkbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usermenu1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@color/silver"
+        android:text="PARK" />
+
+    <Button
+        android:id="@+id/accountbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/parkbutton"
+        android:layout_below="@+id/parkbutton"
+        android:layout_marginTop="43dp"
+        android:background="@color/silver"
+        android:text="ACCOUNT" />
+
+    <Button
+        android:id="@+id/aboutbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/accountbutton"
+        android:layout_below="@+id/accountbutton"
+        android:layout_marginTop="45dp"
+        android:background="@color/silver"
+        android:text="ABOUT" />
+
+    <Button
+        android:id="@+id/logoutbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/aboutbutton"
+        android:layout_marginBottom="50dp"
+        android:background="@color/silver"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/pleasetextview"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+</RelativeLayout>

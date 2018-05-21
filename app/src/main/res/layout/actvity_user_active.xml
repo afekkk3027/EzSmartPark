@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback4"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/parktext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Park your car"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/deactivatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/red"
+        android:text="Stop"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parktext"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="95dp"
+        android:layout_toStartOf="@+id/platetextview"
+        android:text="Plate Number :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="32dp"
+        android:text="Park Time :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="25dp"
+        android:text="Location :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_below="@+id/locationtextview4"
+        android:text="Credit Balance:"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/platetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/deactivatebutton"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/timetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/platetextview"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/locationtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/timetextview"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/credittextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationtextview4"
+        android:layout_toEndOf="@+id/textView26"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/namessstextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/platetextview"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginBottom="33dp"
+        android:text="Name :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/nametextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/platetextview"
+        android:layout_alignTop="@+id/namessstextview"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/locationtextview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/locationtextview"
+        android:layout_below="@+id/locationtextview"
+        android:layout_marginTop="30dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/locationtextview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/locationtextview2"
+        android:layout_below="@+id/locationtextview2"
+        android:layout_marginTop="15dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/locationtextview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/locationtextview3"
+        android:layout_below="@+id/locationtextview3"
+        android:layout_marginTop="14dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="22dp"
+        android:text="Time Left:"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/tv_timeleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignStart="@+id/locationtextview"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_timeleft"
+        android:layout_toEndOf="@+id/tv_timeleft"
+        android:text="Hours"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/credittextview"
+        android:layout_alignStart="@+id/locationtextview4"
+        android:text="RM"
+        android:textColor="@color/yellow" />
+
+
+</RelativeLayout>

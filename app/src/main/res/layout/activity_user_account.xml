@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback5"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/myaccount"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="My Account"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/currenttext"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/balanceview"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:text="Your credit balance :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/topupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/silver"
+        android:text="TOPUP" />
+
+    <Button
+        android:id="@+id/userupdatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/myaccount"
+        android:layout_marginTop="36dp"
+        android:text="Update" />
+
+    <EditText
+        android:id="@+id/balanceview"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/topupbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/lime" />
+
+    <TextView
+        android:id="@+id/usernameview"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/userupdatebutton"
+        android:layout_marginTop="31dp"
+        android:text="Name   :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/useremailview"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usernameview"
+        android:layout_marginTop="12dp"
+        android:text="Email   :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/userphoneview"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/useremailupdateview"
+        android:layout_marginTop="13dp"
+        android:text="Phone  :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/usernamebox"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/usernameview"
+        android:layout_alignBottom="@+id/usernameview"
+        android:layout_alignStart="@+id/balanceview"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/userphonebox"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/userphoneview"
+        android:layout_alignBottom="@+id/userphoneview"
+        android:layout_alignStart="@+id/useremailupdateview"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/useremailupdateview"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/useremailview"
+        android:layout_alignBottom="@+id/useremailview"
+        android:layout_alignStart="@+id/usernamebox"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/currenttext"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/currenttext"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <Button
+        android:id="@+id/confirmtopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/balanceview"
+        android:layout_below="@+id/balanceview"
+        android:text="Confirm"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+</RelativeLayout>

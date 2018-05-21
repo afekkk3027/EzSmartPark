@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback4"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:id="@+id/authmenu1"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/purple"
+        android:text="Authority Menu"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/authparkbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authmenu1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@color/silver"
+        android:text="CHECK PARK" />
+
+    <Button
+        android:id="@+id/authaccountbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authparkbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:background="@color/silver"
+        android:text="ACCOUNT" />
+
+    <Button
+        android:id="@+id/authaboutbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/authaccountbutton"
+        android:layout_below="@+id/authaccountbutton"
+        android:layout_marginTop="45dp"
+        android:background="@color/silver"
+        android:text="ABOUT" />
+
+    <Button
+        android:id="@+id/authlogoutbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/authaboutbutton"
+        android:layout_marginBottom="50dp"
+        android:background="@color/silver"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/authpleasetextview"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/authlogoutbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/checkuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/authmenu1"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/checkemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/authmenu1"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+
+</RelativeLayout>

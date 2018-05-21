@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.afiq.ezsmartpark1.FirebaseStorage">
+
+    <Button
+        android:id="@+id/btncapture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchCamera"
+        android:text="Capture" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnBrowse_Click"
+        android:text="Gallery" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="238dp"
+        android:layout_gravity="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtImageName"
+        android:hint="Image name"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnUpload_Click"
+        android:text="Upload to Firebase" />
+
+    <Button
+        android:id="@+id/menu_authority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnShowListImage_Click"
+        android:text="Menu" />
+
+</LinearLayout>

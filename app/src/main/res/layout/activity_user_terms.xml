@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/termstext"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="Terms and Conditions"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/silver"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/text_views"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/termstext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:scrollbars="vertical"
+        android:text="TERMS AND CONDITIONS BY REGISTER THIS APPLICATION YOU AGREE TO THE CONDITIONS SET OUT BELOW.                              1.	Definitions Account means an account opened for the customer for subscribing to the service  Activate means the points in time when the service is activated.  Deactivate mean the points in time when the service is deactivated.  Agreement means the completed registration agreement all terms and conditions spelled out herein including all subsequent unilateral amendments, variations, additions and deletions made by authorities at its sole and absolute discretion from time to time.  Compound means a fine imposed by the city for vehicle owners or vehicle drivers for their wrong doing that violated the law imposed by the city councils.  Customer means the person authorized for using the system subject to the terms and conditions herein.  Information means information, data, content, interactive applications, services or any other material the customer may provide at any time, access, use or generate via the system.  Parking Charges means the time bounded parking fees imposed by the city councils.  Prepaid Credit means the prepaid value payable by the customer for the usage of the system.    2.	Agreement 2.1 This agreement shall take effect from the date of commencement of the system when the customer’s mobile telephone is activate and shall continue to be in force until terminated in accordance with the terms and condition of this agreement. 2.2 For the avoidance of doubt, city councils shall have the right to use the information from the time of information is disclosed by the customer. 2.3 This agreement shall be automatically renewed for a further duration as prescribed in the minimum period upon expiry of the current minimum period unless otherwise informed by the customer in writing fourteen (14) days before expiry.  3.	Payment 3.1 The customer shall reload the credit as required. Once the payment has been submitted to the respective council, the prepaid credit are not refundable and are not transferable to another council. 3.2 In the event the customer disputes any of the charges in the transactions or the amount outstanding therein, the customer shall provide written notice within fourteen (14) days from the date of the bill statement failing which it shall be deemed to be correct and binding upon the customer. Upon receipt of such written notice by the customer, councils shall review the customer’s account and make any amendment, if necessary.  3.3 Councils reserves the right to take any action it deems necessary for the recovery of unpaid charges of fees and any costs incurred in connection there with shall be borne by the customer. 3.4 All prepaid credit reloaded shall expire within 3 years from the date of last use. 3.5 All compound payments paid by customer to the city councils.  4.	Customer’s Responsibility 4.1 The customer shall: 	a. Use the service and accept full risk and responsibility in doing so. b. Report immediately to the city councils upon the discovery of any fraud,       theft, unauthorised usage, abnormality in the customer’s bill statement or any other occurrence of unlawful nature in respect of the use of the service within 24 hours from such discovery. c. Comply with all notices or changes made by city councils including any upgrading of the system as required. d. Responsible for all equipment and software necessary to use the service .  5.	Disclaimer  By accessing this system application, you agree to the following terms. You must not access our pages if you do not agree all the following terms.  City councils should not be responsible for any damages suffered as a result of your use of the information in the webpage and in no event shall city councils be liable for any indirect punitive or consequential damage howsoever arising from your use of the webpage or the information contained herein.    "
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp" />
+
+
+</RelativeLayout>

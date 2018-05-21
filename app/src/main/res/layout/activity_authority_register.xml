@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <CheckBox
+        android:id="@+id/authcheckBox2"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/authagree"
+        android:layout_toStartOf="@+id/authagree"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/authpasswordreg"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/authemailreg"
+        android:layout_below="@+id/authemailreg"
+        android:layout_marginTop="44dp"
+        android:text="Password :"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/authregister"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="Authority Registration"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/authconfirmreg"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/authpasswordreg"
+        android:layout_below="@+id/authpasswordreg"
+        android:layout_marginTop="44dp"
+        android:text="Re-Password :"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/authemailreg"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/authregister"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Email         :"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/authnextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:background="@color/silver"
+        android:text="SignUp" />
+
+    <EditText
+        android:id="@+id/authemailregtext"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/authemailreg"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/authemailreg"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/authrepasswordregtext"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/authpasswordregtext"
+        android:layout_alignTop="@+id/authconfirmreg"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_authpincode"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/authrepasswordregtext"
+        android:layout_alignTop="@+id/authpincode"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/authpasswordregtext"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/authemailregtext"
+        android:layout_alignTop="@+id/authpasswordreg"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/authagree"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/authnextbutton"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:text="“I have read and agree to the Terms”"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/authdetail"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/authbutton4"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/authstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/authnextbutton"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/authbutton4"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/authrepasswordregtext"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/authpincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/authconfirmreg"
+        android:layout_below="@+id/authconfirmreg"
+        android:layout_marginTop="21dp"
+        android:text="Pin Code :"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/authstatus"
+        android:layout_toStartOf="@+id/authagree"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_pin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_pin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/authagree"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_pin4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

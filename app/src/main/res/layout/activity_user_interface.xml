@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <EditText
+        android:id="@+id/emailfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userregister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/paswordfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailfield"
+        android:layout_below="@+id/emailfield"
+        android:layout_marginTop="41dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paswordfield"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/userregister"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="USER LOGIN"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/registerlink"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/paswordfield"
+        android:layout_below="@+id/loginbutton"
+        android:background="@null"
+        android:text="Don't have account? Register.."
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/status123"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerlink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/detail123"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/status123"
+        android:layout_below="@+id/status123"
+        android:layout_marginTop="27dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

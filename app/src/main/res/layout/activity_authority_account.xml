@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback5"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/myaccount1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="My Account"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/userupdatebutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/myaccount1"
+        android:layout_marginTop="36dp"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/usernameview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/userupdatebutton1"
+        android:layout_marginTop="31dp"
+        android:text="Name   :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/useremailview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Email   :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:layout_below="@+id/usernameview1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/userphoneview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone  :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:layout_below="@+id/useremailview1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/usernamebox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/usernameview1"
+        android:layout_alignBottom="@+id/usernameview1"
+        android:layout_alignStart="@+id/useremailupdateview1"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/userphonebox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userphoneview1"
+        android:layout_alignBottom="@+id/userphoneview1"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/userphoneview1"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/useremailupdateview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/useremailview1"
+        android:layout_alignBottom="@+id/useremailview1"
+        android:layout_alignStart="@+id/userphonebox1"
+        android:textColor="@color/yellow" />
+
+
+
+    <TextView
+        android:id="@+id/tv_bal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+</RelativeLayout>

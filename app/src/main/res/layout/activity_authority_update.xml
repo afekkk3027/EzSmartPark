@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback5"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:id="@+id/updateyourprofile1"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="Update Your Profile"
+        android:textAllCaps="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nameupdate1"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/updateyourprofile1"
+        android:layout_marginTop="52dp"
+        android:text="Name       :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/emailupdate1"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nameupdate1"
+        android:layout_marginTop="14dp"
+        android:text="Email        :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/phoneupdate1"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/emailupdate1"
+        android:layout_marginTop="15dp"
+        android:text="Phone      :"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <EditText
+        android:id="@+id/updatenamebox1"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/nameupdate1"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/nameupdate1"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/updatephonetext1"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/useremailupdateview1"
+        android:layout_alignTop="@+id/phoneupdate1"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:ems="10"
+        android:inputType="number|phone" />
+
+    <Button
+        android:id="@+id/updateprofilebutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/useremailupdateview1"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/updatenamebox1"
+        android:layout_alignTop="@+id/emailupdate1"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+</RelativeLayout>

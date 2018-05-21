@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carback5"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <EditText
+        android:id="@+id/platefill"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/parktext"
+        android:layout_alignTop="@+id/platetext"
+        android:layout_marginEnd="13dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="text|textCapCharacters"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/platetext"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/parktext"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="65dp"
+        android:layout_toStartOf="@+id/tv_latitude"
+        android:text="Plate Number :"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/filltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/platefill"
+        android:layout_alignStart="@+id/platetext"
+        android:layout_marginBottom="35dp"
+        android:text="Fill in the detail and click activate"
+        android:textColor="?attr/colorControlActivated"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/parktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Park your car"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Timetext"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/Place"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:text="Time :"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/background_light" />
+
+    <android.widget.TextClock
+        android:id="@+id/digitalClock"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/Timetext"
+        android:layout_alignBottom="@+id/Timetext"
+        android:layout_alignStart="@+id/platefill"
+        android:format12Hour="@null"
+        android:format24Hour="kk:mm:ss"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:timeZone="GMT+8" />
+
+    <Button
+        android:id="@+id/activatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lime"
+        android:text="Activate"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_latitude"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/activatebutton"
+        android:layout_below="@+id/digitalClock"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/yellow"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_longitude"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/yellow"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_locality"
+        android:layout_below="@+id/tv_area"
+        android:layout_marginTop="52dp"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/tv_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/digitalClock"
+        android:layout_below="@+id/tv_city"
+        android:layout_marginTop="23dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/tv_locality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_area"
+        android:layout_alignTop="@+id/tv_area"
+        android:layout_marginTop="35dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_area"
+        android:layout_centerVertical="true"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/Place"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/tv_city"
+        android:layout_alignBottom="@+id/tv_city"
+        android:layout_alignParentStart="true"
+        android:text="Location :"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/accbal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_creditbal"
+        android:layout_alignBottom="@+id/tv_creditbal"
+        android:layout_alignEnd="@+id/Place"
+        android:text="Credit Balance :"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/tv_creditbal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_address"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/tv_address"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow" />
+
+    <Button
+        android:id="@+id/refreshbutton"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/Place"
+        android:layout_below="@+id/Place"
+        android:background="@color/purple"
+        android:text="Refresh Location"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>
